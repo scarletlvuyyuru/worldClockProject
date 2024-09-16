@@ -3,11 +3,21 @@ body {    padding-top: 1rem;
     padding-bottom: 3rem;
     color: rgb(var(--bs-tertiary-color-rgb));
     display:block;
-};
+}
 
 footer{text-align: center;
-}; 
+}
+.city{color:white;
+background-color: black;}
 
+
+ 
+.date{color:red;
+font-size: larger;}
+
+.time{color:blue;
+font-size: x-large;
+font-weight: bold;}
 
 
 
