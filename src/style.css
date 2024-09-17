@@ -1,5 +1,5 @@
 body {    padding-top: 1rem;
-    
+
     padding-bottom: 3rem;
     color: rgb(var(--bs-tertiary-color-rgb));
     display:block;
@@ -7,16 +7,34 @@ body {    padding-top: 1rem;
 
 footer{text-align: center;
 }
-.city{color:white;
-background-color: black;}
+select {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 10px;
+    
+  }
+  
+ 
 
+.city{
+    color:white;
+    background-color: #140923;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px; 
+}
 
  
+ 
 .date{color:red;
-font-size: larger;}
+font-size: larger;
+}
 
 .time{color:blue;
-font-size: x-large;
+font-size:xx-large;
 font-weight: bold;}
 
 
