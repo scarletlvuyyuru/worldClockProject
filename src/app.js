@@ -25,6 +25,16 @@ currentTimeElement.innerHTML = currentTime.format("h:mm:ss SS [<small>]A[</small
 currentDateElement.innerHTML = moment().format("MMMM Do YYYY");
 }
 
+function updateCity(event) {
+    let cityTimeZone = event.target.value;
+    let cityTime = moment().tz(cityTimeZone);
+  console.log(cityTime.format("MMM Do YYY"));
+}
+
 updateTime();
 setInterval(updateTime, 1000);
+
+let citiesSelectElement = document.querySelector("#city");
+citiesSelectElement.addEventListener("change", updateCity);
+
 
