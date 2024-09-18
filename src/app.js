@@ -16,7 +16,7 @@ if (honoluluElement)
 let honoluluDateElement = honoluluElement.querySelector(".date");
 let honoluluTimeElement = honoluluElement.querySelector(".time");
 let honoluluTime= moment.tz("Pacific/Honolulu");
-honoluluTimeElement.innerHTML = honoluluTime.format("h:mm:ss [<small>]A[</small>]");
+honoluluTimeElement.innerHTML = honoluluTime.format("h:mm:ss [<small>] A [</small>]");
 honoluluDateElement.innerHTML = moment().format("MMMM Do YYYY");
     }
 let currentElement = document.querySelector("#current");
@@ -36,6 +36,8 @@ function updateCity(event) {
     let cityName = cityTimeZone.replace("_", " ").split("/")[1];
     let cityTime = moment().tz(cityTimeZone);
     
+    
+
     let citiesElement = document.querySelector("#cities");
     citiesElement.innerHTML = `
 
@@ -45,6 +47,8 @@ function updateCity(event) {
                     <div class="time">${cityTime.format("h:mm" )}<small>${cityTime.format("A")}</small></div>
      </div>`;
     
+     let backgroundImgElement = document.querySelector("#backgroundImg");
+    backgroundImgElement.innerHTML = Image="src/img/`${cityName}`.png";
 }
 
 
